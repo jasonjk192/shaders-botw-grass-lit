@@ -15,14 +15,15 @@ MonoBehaviour:
   version: 4
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Grass_Blue
-  m_Shader: {fileID: 4800000, guid: 72e68f904ae08fc4299172cfb53712c6, type: 3}
-  m_ShaderKeywords: 
+  m_Shader: {fileID: 4800000, guid: 20e6b063293ca63428f21c19cc698004, type: 3}
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
@@ -80,6 +81,10 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _RandomValueMap:
+        m_Texture: {fileID: 2800000, guid: 8fcdfc0f320a4384380e9965ed70be06, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _SpecGlossMap:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
@@ -100,6 +105,7 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _AlphaClip: 0
     - _BendDelta: 0.15
@@ -153,6 +159,7 @@ Material:
     - _BaseColor: {r: 0.20803669, g: 0.4089649, b: 0.8018868, a: 1}
     - _Color: {r: 0.11764706, g: 0.9137255, b: 0.13333334, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _GrassTipColor: {r: 0, g: 1, b: 0.8694532, a: 1}
     - _GroundColor: {r: 0.5660378, g: 0.45540816, b: 0.32306874, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
     - _TipColor: {r: 0.6084906, g: 0.94068044, b: 1, a: 1}

@@ -12,9 +12,13 @@ Grass can help tie together a scene, especially large open areas like those you'
 
 This project was created using Unity 2020.2.1f1 and Universal Render Pipeline 10.2.2.
 
+This project was modified using Unity 2021.3.29f1 and Universal Render Pipeline 12.1.12.
+
 ## Authors
 
 This project and the corresponding tutorial was created by Daniel Ilett.
+
+This project fork was modified by WinterCrestal.
 
 ### Other Creators
 
@@ -30,3 +34,9 @@ This effect is based on tutorials by many people. Check them out!
 ## Release
 
 This project was released publicly on June 30th 2021 alongside a [YouTube tutorial](https://www.youtube.com/watch?v=MeyW_aYE82s) outlining the steps taken to make the effect
+
+## Modifications
+
+The purpose of this fork is to integrate the original project's grass shader with Unity's lighting system.
+
+![Screenshot1](Screenshots/1.png)
