@@ -218,7 +218,7 @@ Shader "Custom/BotWGrassModified"
 			#pragma geometry geom
             #pragma fragment frag
 
-			#include "./Lit.hlsl"
+			#include "./GBufferLit.hlsl"
 
             ENDHLSL
         }
@@ -237,7 +237,7 @@ Shader "Custom/BotWGrassModified"
             #pragma require geometry
             #pragma geometry geom
             #pragma fragment frag
-            #include "./Lit.hlsl"
+            #include "./Depth.hlsl"
             ENDHLSL
         }
 
@@ -254,7 +254,7 @@ Shader "Custom/BotWGrassModified"
             #pragma require geometry
             #pragma geometry geom
             #pragma fragment frag
-            #include "./Lit.hlsl"
+            #include "./DepthNormals.hlsl"
             ENDHLSL
         }
 
@@ -273,7 +273,7 @@ Shader "Custom/BotWGrassModified"
             #pragma require geometry
             #pragma geometry geom
             #pragma fragment frag
-            #include "./Lit.hlsl"
+            #include "./Shadow.hlsl"
             ENDHLSL
         }
 

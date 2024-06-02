@@ -4,8 +4,8 @@
 #define GRASS_SUPPORT_INCLUDED
 
 #include "LitInput.hlsl"
-#include "Packages/com.unity.render-pipelines.universal/Shaders/LitForwardPass.hlsl"
 #include "Common.hlsl"
+#include "Packages/com.unity.render-pipelines.universal/Shaders/LitForwardPass.hlsl"
 
 // We need to duplicate the fragment code for lighting model just to modify brdf data to support the grass color lerp, otherwise everything else is kept as is
 half4 GrassFragmentPBR(InputData inputData, SurfaceData surfaceData, float2 uv)
@@ -23,6 +23,7 @@ half4 GrassFragmentPBR(InputData inputData, SurfaceData surfaceData, float2 uv)
     // Grass color lerping
     half oneMinusReflectivity = half(1.0) - brdfData.reflectivity;
     brdfData.diffuse = lerp(brdfData.diffuse, _GrassTipColor.rgb * oneMinusReflectivity, uv.y);
+    brdfData.albedo = lerp(brdfData.albedo, _GrassTipColor.rgb, uv.y);
 
 #if defined(DEBUG_DISPLAY)
     half4 debugColor;
